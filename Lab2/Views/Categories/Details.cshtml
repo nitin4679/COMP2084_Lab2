@@ -1,0 +1,38 @@
+﻿@model Lab2.Models.CategoriesModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>COMP2084 - Lab2</h1>
+
+<div>
+    <h4>@ViewBag.Message</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CategoryName) 
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<footer>
+    <br />
+
+    <p>Name - Nitin</p>
+    <p>Student Id : 200471966</p>
+
+</footer>
